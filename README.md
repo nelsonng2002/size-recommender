@@ -1,8 +1,10 @@
 # README
 
-This is the [Flask](http://flask.pocoo.org/) [quick start](http://flask.pocoo.org/docs/1.0/quickstart/#a-minimal-application) example for [Render](https://render.com).
+This website helps you find the right size of clothing to order from a new brand you are unfamiliar with by looking at sizes you order from brands you are more familiar with
 
-The app in this repo is deployed at [https://flask.onrender.com](https://flask.onrender.com).
+Written in Python, deployed using Flask and Render. 
+
+Check out the website at https://size-recommender.onrender.com
 
 ## Deployment
 
