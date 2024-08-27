@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Size Comparison Tool</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .container {
+        background-color: #ffffff;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        max-width: 400px;
+        width: 100%;
+      }
+      h1 {
+        text-align: center;
+        color: #333333;
+        margin-bottom: 20px;
+      }
+      label {
+        display: block;
+        margin-bottom: 10px;
+        color: #555555;
+        font-weight: bold;
+      }
+      select,
+      input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #cccccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+      }
+      input[type="submit"] {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+      input[type="submit"]:hover {
+        background-color: #0056b3;
+      }
+      .result {
+        background-color: #f8f9fa;
+        padding: 15px;
+        border-radius: 5px;
+        text-align: center;
+        font-weight: bold;
+        color: #007bff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Find Your Size</h1>
+      <p>
+        Finding the right size is difficult when you're shopping from a new brand. 
+        This website will help you find the right size to order based on your known size of a brand that you frequently shop from! 
+        Give it a try!
+      </p>
+      <form method="POST">
+        <label for="unfamiliar_brand">Which new brand are you ordering from?</label>
+        <select id="unfamiliar_brand" name="unfamiliar_brand" required>
+          <option value="" disabled selected>Select a brand</option>
+          {% for brand in brands %}
+            <option value="{{ brand }}">{{ brand }}</option>
+          {% endfor %}
+        </select>
+
+        <label for="category">Choose a clothing category:</label>
+        <select id="category" name="category" required>
+          <option value="Tops">Tops</option>
+          <option value="Bottoms">Bottoms</option>
+        </select>
+        
+        <label for="familiar_brand">Which brand regularly shop from?:</label>
+        <select id="familiar_brand" name="familiar_brand" required>
+          <option value="" disabled selected>Select a brand</option>
+          {% for brand in brands %}
+            <option value="{{ brand }}">{{ brand }}</option>
+          {% endfor %}
+        </select>
+        
+        <label for="familiar_size">What is your size from that brand?</label>
+        <select id="familiar_size" name="familiar_size" required>
+          <option value="XS">XS</option>
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+          <option value="XL">XL</option>
+        </select>
+        
+        <input type="submit" value="Submit">
+      </form>
+      
+      {% if result %}
+      <div class="result">
+        <h2>{{ result }}</h2>
+      </div>
+      {% endif %}
+    </div>
+  </body>
+</html>
