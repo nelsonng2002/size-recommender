@@ -1,0 +1,68 @@
+{
+    "Abercrombie & Fitch": {
+      "Tops": {
+        "XS": {"chest": "81-86", "arm_length": 81},
+        "S": {"chest": "89-94", "arm_length": 84},
+        "M": {"chest": "97-102", "arm_length": 86},
+        "L": {"chest": "104-109", "arm_length": 89},
+        "XL": {"chest": "112-118", "arm_length": 91}
+      },
+      "Bottoms": {
+        "XS": {"waist": "66-71"},
+        "S": {"waist": "74-76"},
+        "M": {"waist": "79-81"},
+        "L": {"waist": "84-88"},
+        "XL": {"waist": "93-98"}
+      }
+    },
+    "Arket": {
+      "Tops": {
+        "XS": {"chest": 84, "waist": 72},
+        "S": {"chest": "88-92", "waist": "76-80"},
+        "M": {"chest": "96-100", "waist": "84-88"},
+        "L": {"chest": "104-108", "waist": "92-96"},
+        "XL": {"chest": "112-116", "waist": "100-104"}
+      },
+      "Bottoms": {
+        "XS": {"waist": 72},
+        "S": {"waist": "76-80"},
+        "M": {"waist": "84-88"},
+        "L": {"waist": "92-96"},
+        "XL": {"waist": "100-104"}
+        }
+    },
+    "COS": {
+      "Tops": {
+        "XS": {"chest": 84, "waist": 72},
+        "S": {"chest": "88-92", "waist": "76-80"},
+        "M": {"chest": "96-100", "waist": "84-88"},
+        "L": {"chest": "104-108", "waist": "92-96"},
+        "XL": {"chest": 84, "waist": 100}
+      },
+      "Bottoms": {
+        "XS": {"waist": 72},
+        "S": {"waist": "76-80"},
+        "M": {"waist": "84-88"},
+        "L": {"waist": "92-96"},
+        "XL": {"waist": "100-104"}
+      }
+    },
+    "Uniqlo": {
+      "Tops": {
+        "XS": {"chest": "80-88", "arm_length": 82},
+        "S": {"chest": "88-96", "arm_length": 84.5},
+        "M": {"chest": "96-104", "arm_length": 87},
+        "L": {"chest": "104-112", "arm_length": 89.5},
+        "XL": {"chest": "112-120", "arm_length": 91.5}
+      },
+      "Bottoms": {
+        "XS": {"waist": "66-72"},
+        "S": {"waist": "68-76"},
+        "M": {"waist": "76-84"},
+        "L": {"waist": "84-92"},
+        "XL": {"waist": "92-100"}
+      }
+    }
+}
+  
+  
